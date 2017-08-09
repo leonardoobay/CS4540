@@ -219,6 +219,10 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
             Intent intent = new Intent(this,UpdateProfile.class);
             startActivity(intent);
         }
+        else if (item.getItemId() == R.id.calories) {
+            Intent intent = new Intent(this,FoodActivity.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
     }
 
